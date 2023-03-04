@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.maindiv{
+    padding: 2rem 8rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 6rem; 
+  
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+#mi p{
+    color: rgb(44, 207, 44);
+
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.buy button{
+    background-color:rgb(44, 207, 44);
+    color: white;
+    border: 1px solid rgb(37, 255, 37);
+    border-radius: 25%;
+    font-size: 17px;
+    padding: 4px 4px;
+    cursor: pointer;
+}
+.imageContainer img{
+   width: 180px;
+   height: auto;
+   transform: rotate(27deg);
+}
+.centerContainer{
+    display: flex;
+    padding-left: 8rem;
+    flex-direction: row;
+    justify-content:flex-start;
+    gap: 30rem;
+    position: relative;
+    bottom: -15rem;
+}
+.dataContainer{
+    width: 20%;
+}
+#heading{
+    font-size: 3rem;
+    font-weight:900;
+}
+
+/* media queries  */
+@media screen and (max-width: 600px) {
+    .maindiv{
+        width: 100vh;
+    }
+    .centerContainer{
+        padding-left:2rem ;
+        gap: 20rem;
+        bottom: -30rem;
+    }
+    .dataContainer{
+        width: 40%;
+    }
+    ul li a{
+        font-size: x-large;
+    }
+    
+}
+.navIteam{
+    padding-right: 2rem;
+}
+@media screen and (max-width: 1000px) {
+    .maindiv{
+        width: 116vh;
+    }
+    .centerContainer{
+        gap: 25rem;
+        padding-left: 4rem;
+    }
+    .dataContainer{
+        width: 60%;
+    }
+}
